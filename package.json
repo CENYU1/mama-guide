@@ -1,0 +1,16 @@
+{
+  "name": "my-vuepress-blogs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "cenyu",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-medium-zoom": "^1.9.10",
+    "vuepress": "^1.9.10",
+    "vuepress-plugin-mathjax": "^1.2.8"
+  }
+}
