@@ -5,15 +5,20 @@
   "author": "cenyu",
   "license": "MIT",
   "scripts": {
+    "prepare": "husky install",
     "docs:dev": "vuepress dev docs",
     "docs:build": "rm -rf ./docs/.vuepress/dist && vuepress build docs && ssh root@43.138.69.196 'rm -rf /www/wwwroot/mama-guide/*' && scp -r ./docs/.vuepress/dist/* root@43.138.69.196:/www/wwwroot/mama-guide"
   },
   "devDependencies": {
     "@vuepress/plugin-medium-zoom": "^1.9.10",
+    "husky": "^8.0.3",
     "vuepress": "^1.9.10",
     "vuepress-plugin-mathjax": "^1.2.8"
   },
-  "gitHooks": {
-    "post-commit": "yarn docs:build"
+  "husky": {
+    "hooks": {
+      "pre-commit": "echo \"[Husky] pre-commit\"",
+      "post-commit": "yarn docs:build"
+    }
   }
 }

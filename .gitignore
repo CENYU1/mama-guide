@@ -11,3 +11,4 @@ build
 .vscode
 
 docs/.vuepress/dist
+.husky
