@@ -2,6 +2,7 @@
 
 * [分支](/git/branch.md)
 * [rebase命令](/git/rebase.md)
+* [git hooks](/git/hooks.md)
 * [stash命令](/git/stash.md)
 * [cherry-pick命令](#)
 
